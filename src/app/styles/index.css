@@ -1,5 +1,5 @@
 .main div{
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 20px;
 }
 
@@ -8,4 +8,17 @@
     border-collapse: collapse;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.nav li {
+    display: inline;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    margin: 30px;
 }
