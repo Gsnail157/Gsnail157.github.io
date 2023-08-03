@@ -18,7 +18,7 @@
                     <a href="../pages/about.html">About Me</a>
                 </li>
                 <li>
-                    <a href="">Resume</a>
+                    <a href="../pages/resume.html">Resume</a>
                 </li>
                 <li>
                     <a href="../pages/projects.html">Projects</a>
@@ -31,9 +31,20 @@
     </header>
     <main class="main">
         <div>
-            <h2>My Projects</h2>
+            <h2>My Projects:</h2>
+            <section>
+                <b>Conway Game of Life</b>
+                <table id="table"></table>
+                <button onclick="step()">Step</button>
+                <button onclick="go()">Go</button>
+                <button onclick="pause()">Pause</button>
+                <button onclick="reset()">Reset</button>
+                <button onclick="random()">Random</button>
+            </section>  
         </div>
     </main>
-    
+
+    <script src="../js/projects.js"></script>
+    <script src="../js/conway.js"></script>
 </body>
 </html>
