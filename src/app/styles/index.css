@@ -20,15 +20,25 @@ main {
     display: flex;
     gap: 10px; /* Space between icons */
     padding: 0px;
-    margin: 0px;
+    margin-top: 3px;
+    margin-bottom: 0px;
 }
 
 .socials a {
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 0px;
-    padding: 0px;
+    transition: transform 0.3s ease;
+}
+
+.socials a:hover{
+    background-color: lightgrey;
+}
+
+img {
+    display: block;
+    width: 40px;
+    height: 40px;
 }
 
 .icon-link img {
@@ -41,6 +51,7 @@ main {
 
 .icon-link img:hover {
     transform: scale(1.2); /* Scale icon on hover */
+    background-color: lightgrey;
 }
 
 .docs {
@@ -79,15 +90,32 @@ main {
 }
 
 .skills {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-left: 0px;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 10px; /* Space between items */
 }
 
-.skills li {
-    list-style-type: none;
-    border: 1px solid black;
+.skill-item {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin-bottom: 10px; /* Space between list items */
+    border: 2.5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.skill-icon {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px; /* Adjust the size of the icons */
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.skill-name {
+    display: inline-block;
 }
 
 header {
@@ -108,6 +136,8 @@ header {
 
 body {
     background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 .text {
@@ -136,6 +166,7 @@ h4 {
     margin: 0px;
     font-weight: lighter;
 }
+
 h6 {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -154,7 +185,40 @@ p {
 
 section {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.work-experience {
+    margin-bottom: 20px;
+}
+
+.work-item {
+    margin-bottom: 20px;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     margin-bottom: 10px;
 }
 
+.company {
+    font-weight: bold;
+}
+
+.date-location {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.responsibilities {
+    list-style-type: disc; /* or circle, square, etc. */
+    padding-left: 20px; /* Indent bullets */
+    margin: 0; /* Remove default margin */
+}
+
+.responsibilities li {
+    margin-bottom: 5px; /* Space between bullet points */
+}
