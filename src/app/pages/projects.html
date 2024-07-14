@@ -7,14 +7,38 @@
     <link rel="stylesheet" type="text/css" href="../styles/index.css"/>
 </head>
 <body>
-    <header>
-        <h1>Gary J. Wang </h1>
-        <nav>
-            <ol class="links">
+    <main>
+        <header>
+            <div class="text">
+                <h1>Gary J. Wang </h1>
+                <h4>Finance & Computer Science Student in Asset Management</h4>
+                <h6>Philadelphia, Pennsylvannia</h6>
+                <ol class="socials">
+        
+                    <a href="https://www.linkedin.com/in/garyjwang157/">LinkedIn</a>
                 
-                <a href="../../../index.html">Home</a>
+                    <a href="">Instagram</a>
+                
+                    <a href="">Twitter</a>
+                
+                    <a href="https://github.com/Gsnail157">GitHub</a>
+                
+                </ol>
+                <ol class="docs">
+                    <a href="../pages/resume.html">Resume</a>
+                    <a href="../pages/coverletter.html">Cover Letter</a>
+                </ol>
+            </div>
+            <div class="photo">
+                <picture>
+                    <img src="../images/IMG_1865.jpg">
+                </picture>
+            </div>
+        </header>
+        <nav>
+            <ol class="navigation">
 
-                <a href="../pages/about.html">About Me</a>
+                <a href="../../../index.html">About Me</a>
 
                 <a href="../pages/resume.html">Resume</a>
 
@@ -24,22 +48,21 @@
 
             </ol>
         </nav>
-    </header>
-    <main class="main">
-        <div>
-            <h2>My Projects:</h2>
-            <section>
-                <b>Conway Game of Life</b>
-                <table id="table"></table>
-                <button onclick="step()">Step</button>
-                <button onclick="go()">Go</button>
-                <button onclick="pause()">Pause</button>
-                <button onclick="reset()">Reset</button>
-                <button onclick="random()">Random</button>
-            </section>  
+        <div class="content">
+            <div>
+                <h2>My Projects:</h2>
+                <section>
+                    <b>Conway Game of Life</b>
+                    <table id="table"></table>
+                    <button onclick="step()">Step</button>
+                    <button onclick="go()">Go</button>
+                    <button onclick="pause()">Pause</button>
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="random()">Random</button>
+                </section>  
+            </div>
         </div>
     </main>
-
     <script src="../js/projects.js"></script>
     <script src="../js/conway.js"></script>
 </body>

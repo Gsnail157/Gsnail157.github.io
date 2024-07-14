@@ -1,8 +1,11 @@
-.main div{
-    border: 2px solid black;
-    padding: 50px;
+main {
+    padding: 35px;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top:  5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightblue;
 }
 
 #table {
@@ -12,39 +15,91 @@
     margin-bottom: 10px;
 }
 
-.links {
+.socials {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.docs {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.navigation {
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px;
 }
 
-.links a {
+.navigation a {
     background-color: lightblue;
     padding: 10px;
     text-decoration: none;
     color: black;
     border-radius: 10px;
 
-    transition: transform 0.4s ease 0s;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
-.links a:hover {
-    transform: translateY(-10px);
+.navigation a:hover {
+    transform: scale(1.1);
+    padding: 12px 24px; /* Slightly increase padding */
 }
 
 header {
-    text-align: center;
-    border: 2px solid black;
-    margin-bottom: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 10%;
+    margin: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.photo picture img{
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire element */
 }
 
 body {
-    margin: 30px;
+    background-color: white;
+}
+
+.text {
+    margin-top: 30px;
 }
 
 h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-weight: lighter;
+}
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: grey;
+    font-weight: lighter;
 }
