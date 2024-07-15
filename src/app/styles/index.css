@@ -222,3 +222,20 @@ section {
 .responsibilities li {
     margin-bottom: 5px; /* Space between bullet points */
 }
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.book {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+.book img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
