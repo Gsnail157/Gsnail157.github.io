@@ -1,0 +1,22 @@
+:root {
+    --color-text: #FFF;
+    --font: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+    --background-color: #212124;
+    --color-links: #2d545e;
+}
+
+
+body {
+  font-family: var(--font);
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--background-color)
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-links);
+}
