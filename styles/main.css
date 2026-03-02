@@ -1,8 +1,11 @@
 :root {
-    --color-text: #FFF;
-    --font: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+    --text-color: #FFF;
+    --font: "JetBrainsMono Nerd Font", "JetBrains mono", monospace;
     --background-color: #212124;
-    --color-links: #2d545e;
+    --night-blue: #2d545e;
+    --night-blue-shadow: #12343b;
+    --sand-tan: #e1b382;
+    --sand-tan-shadow: #c89666;
 }
 
 
@@ -12,8 +15,8 @@ body {
   margin: 2rem auto;
   padding: 0 1rem;
   line-height: 1.6;
-  color: var(--color-text);
-  background: var(--background-color)
+  color: var(--text-color);
+  background: var(--night-blue);
 }
 
 a {
