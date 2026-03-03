@@ -29,11 +29,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(10px);
   background: rgba(33, 33, 36, 0.7);
   padding: 1rem 2rem;
   width: 700px;
+  padding-bottom: 0rem;
 }
 
 .header-hr {
@@ -48,21 +49,17 @@ body {
   gap: 2.5rem;
 }
 
-hr {
-  margin-top: 5rem;
-}
-
 .land{
     font-size: 35px;
     color: var(--text-color);
 }
 
-.landing {
-    padding-top: 7rem;
+.content {
+    padding-top: 5rem;
 }
 
 .header img {
-    width: 15%;
+    width: 10%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
@@ -82,7 +79,7 @@ a::after {
   left: 0;
   bottom: -2px;
   width: 0;
-  height: 1px;
+  height: 4px;
   background: currentColor;
   transition: width 0.3s;
 }
@@ -109,6 +106,12 @@ a:hover::after {
 
 .header-top {
   display: contents;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 @media (max-width: 480px) {
