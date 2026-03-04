@@ -6,12 +6,13 @@
     --night-blue-shadow: #12343b;
     --sand-tan: #e1b382;
     --sand-tan-shadow: #c89666;
+    --page-width: 800px;
 }
 
 
 body {
     font-family: var(--font);
-    max-width: 700px;
+    max-width: var(--page-width);
     margin: 2rem auto;
     padding: 0 1rem;
     line-height: 1.6;
@@ -33,7 +34,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   background: rgba(33, 33, 36, 0.7);
   padding: 1rem 2rem;
-  width: 700px;
+  width: var(--page-width);
   padding-bottom: 0rem;
 }
 
