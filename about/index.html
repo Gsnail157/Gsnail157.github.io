@@ -3,12 +3,24 @@
     <head>
         <script src="../layouts/templates.js"></script>
         <site-head title="About - Gary Wang"></site-head>
+        <script>
+            function copyEmail(e, el) {
+              e.preventDefault();
+              navigator.clipboard.writeText('garyjwang12@gmail.com').then(() => {
+                el.textContent = 'Email Copied!';
+                setTimeout(() => el.textContent = 'Copy email to clipboard', 2000);
+              });
+            }
+        </script>
     </head>
     <body>
         <site-header></site-header>
         <div class="content">
             <div class="title">
                 <div class="name"><h1>Gary J. Wang </h1>
+                    <img src="" alt="globe">
+                    <i>Philadelphia</i>
+                    <br>
                     technologist | thinker | investor
                 </div>
             </div>
@@ -17,13 +29,16 @@
                 <h2>* Contact</h2>
                  <ul class="contact-list">
                      <li>
-                         <a href="www.linkedin.com/in/garyjwang157">linkedin</a> 
+                         <img src="" alt="linkedin">
+                         <a href="https://www.linkedin.com/in/garyjwang157">Linkedin</a> 
                      </li>
                      <li>
+                         <img src="" alt="github">
                          <a href="https://github.com/Gsnail157">Github</a> 
                      </li>
                      <li>
-                         <a href="garyjwang12@gmail.com">Email - Please email me for resume</a> 
+                         <img src="" alt="email">
+                         <a href="#" onclick="copyEmail(event, this)">Copy email to clipboard - Email for Resume!</a> 
                      </li>
                  </ul>   
             </div>
@@ -86,12 +101,62 @@
             </div>
             <div class="skills">
                 <h2>* Skills</h2>
+                <ul>
+                    <li>Python programming</li>
+                    <li>C programming</li>
+                    <li>SQL</li>
+                    <li>Bloomberg Terminal</li>
+                    <li>Aladdin</li>
+                    <li>Process automation & workflow optimization</li>
+                    <li>End-to-end trade lifecyle management</li>
+                    <li>Portfolio implementation</li>
+                    <li>Portfolio risk & control oversight</li>
+                    <li>Investment management agreement(IMA) interpretation</li>
+                    <li>Investment guideline compliance</li>
+                    <li>Data management</li>
+                    <li>Data quality assurance & governance</li>
+                    <li>Counterparty relationship management</li>
+                </ul>
             </div>
             <div class="interest">
                 <h2>* Interests</h2> 
+                <ul>
+                    <li>programming</li>
+                    <li>building computers</li>
+                    <li>basketball</li>
+                    <li>reading</li>
+                    <li>men's fashion</li>
+                    <li>traveling</li>
+                    <li>philosophy</li>
+                    <li>financial markets</li>
+                    <li>weight lifting</li>
+                </ul>
             </div>
             <div class="tech">
                 <h2>* Technology I Use</h2>
+                <ul>
+                    <li><b>OS</b>: I mainly use Fedora 43 Desktop Edition for deep work and web surfing. I use windows 11 only for gaming
+                        and MacOS Tahoe to take where ever I go. I will usually just ssh into fedora from my mac though. I have used Arch
+                        Linux in the past.
+                    </li>
+                    <br>
+                    <li><b>Text Editor</b>: I use NeoVim for all programming and writing needs. I try to keep a minimal neovim configuration
+                        with limited plugins. You can view my dotfiles <a href="https://github.com/Gsnail157/dotfiles">here</a>. My workflow is
+                        mostly neovim and tmux.
+                    </li>
+                    <br>
+                    <li><b>Shell</b>: I use bash. I've tried zsh but bash just works already. I dont really care much for the customizations
+                        zsh offers.
+                    </li>
+                    <br>
+                    <li><b>Keyboard</b>: i need to look this up</li>
+                    <br>
+                    <li><b>Mouse</b>: Hyper X</li>
+                    <br>
+                    <li><b>Monitor</b>: 160hz Ultra Wide from LG</li>
+                    <br>
+                    <li><b>Machines</b>: I have two desktop - Windows 11 and Fedora 43 -, a M2 Macbook Air, and a Thinkpad. See specs below:</li>
+                </ul>
             </div>
         </div>
     </body>

@@ -6,8 +6,9 @@ class SiteHeader extends HTMLElement {
             <div class="header-right">
                 <div class="header-links">
                     <a href="../about/">about</a>
-                    <a href="../blog/">blog</a>
                     <a href="../portfolio/">portfolio</a>
+                    <a href="../blog/">blog</a>
+                    <a href="../books/">books</a>
                 </div>
             </div>
             <img src="../public/images/IMG_1865.jpg" alt="headshot">
