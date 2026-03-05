@@ -34,7 +34,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   background: rgba(33, 33, 36, 0.7);
   padding: 1rem 2rem;
-  width: var(--page-width);
+  width: 800px;
   padding-bottom: 0rem;
 }
 
@@ -153,6 +153,30 @@ a:hover::after {
     height: 70px;
     margin: 0 4px;
 }
+
+.book-entry {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.book-entry img {
+  width: 80px;
+  height: 115px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-title { font-size: 1.1rem; font-weight: bold; }
+.book-author { color: #555; }
+.book-opinions { font-size: 0.95rem; line-height: 1.5; margin-top: 4px; }
 
 @media (max-width: 480px) {
   .header {
