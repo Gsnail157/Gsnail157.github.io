@@ -2,16 +2,16 @@ class SiteHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <div class="header">
-            <a class="land" href="../"><span>GARY </span><span>WANG</span></a>
+            <a class="land" href="/"><span>GARY </span><span>WANG</span></a>
             <div class="header-right">
                 <div class="header-links">
-                    <a href="../about/">about</a>
-                    <a href="../portfolio/">portfolio</a>
-                    <a href="../blog/">blog</a>
-                    <a href="../books/">books</a>
+                    <a href="/about/">about</a>
+                    <a href="/portfolio/">portfolio</a>
+                    <a href="/blog/">blog</a>
+                    <a href="/books/">books</a>
                 </div>
             </div>
-            <img src="../public/images/IMG_1865.jpg" alt="headshot">
+            <img src="/public/images/IMG_1865.jpg" alt="headshot">
             <hr class="header-hr">
         </div>
     `;

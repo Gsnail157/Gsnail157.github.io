@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/layouts/templates.js"></script>
+    <site-head title="{{ title }}"></site-head>
+</head>
+<body>
+    <site-header></site-header>
+    <div class="content">
+      <header class="site-header">
+        <a href="/blog/" class="back-link">← Back to Blog</a>
+      </header>
+      <main class="post-body">
+        <article>
+          {% if image %}
+            <img src="{{ image }}" alt="{{ title }}" class="post-hero-img" />
+          {% endif %}
+          <div class="post-content">
+            <p class="post-meta">{{ date | date: "%B %d, %Y" }}</p>
+            <h1>{{ title }}</h1>
+            {{ content }}
+          </div>
+        </article>
+      </main>
+    </div>
+</body>
+</html>
