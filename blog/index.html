@@ -11,9 +11,6 @@ layout: null
         <site-header></site-header>
         <div class="content">
             <main class="blog-page">
-                <h1>Blog</h1>
-                <p class="subtitle">All posts</p>
-             
                 <div class="post-grid">
                   {% for post in collections.posts | reverse %}
                     <a href="{{ post.url }}" class="post-card">
@@ -23,8 +20,8 @@ layout: null
                         <img src="/styles/placeholder.jpg" alt="No image" />
                       {% endif %}
                       <div class="post-card-body">
-                        <p class="post-card-date">{{ post.date | date: "%B %d, %Y" }}</p>
                         <h2 class="post-card-title">{{ post.data.title }}</h2>
+                        <p class="post-card-date">{{ post.date | date: "%B %d, %Y" }}</p>
                       </div>
                     </a>
                   {% endfor %}
