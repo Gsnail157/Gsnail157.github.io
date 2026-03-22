@@ -9,12 +9,15 @@
     --page-width: 800px;
 }
 
+html {
+    background: var(--background-color);
+}
 
 body {
     font-family: var(--font);
     max-width: var(--page-width);
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0rem;
     line-height: 1.6;
     color: var(--text-color);
     background: var(--background-color);
