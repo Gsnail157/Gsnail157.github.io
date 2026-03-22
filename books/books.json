@@ -4,5 +4,29 @@
     "author": "Paulo Coelho",
     "image": "https://covers.openlibrary.org/b/isbn/9780062315007-M.jpg",
     "opinions": "Very good. Great read since i finished this in 2 days"
+  },
+  {
+    "title": "Ikigai",
+    "author": "Hector Garcia; Francesc Miralles",
+    "image": "https://covers.openlibrary.org/b/isbn/978-1786330895-M.jpg",
+    "opinions": "decent"
+  },
+  {
+    "title": "The Richest Man in Babylon",
+    "author": "George S. Clason",
+    "image": "https://covers.openlibrary.org/b/isbn/1954839499-M.jpg",
+    "opinions": "I liked very much"
+  },
+  {
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "image": "https://covers.openlibrary.org/b/isbn/0307887898-M.jpg",
+    "opinions": "mid"
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "image": "https://covers.openlibrary.org/b/isbn/978-0425266540-M.jpg",
+    "opinions": "great story"
   }
 ]
