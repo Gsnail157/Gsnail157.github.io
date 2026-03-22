@@ -60,6 +60,7 @@ body {
 .content {
     margin-top: 10rem;
     background: var(--background-color);
+    margin-bottom: 10rem;
 }
 
 .header img {
