@@ -218,21 +218,24 @@ a:hover::after {
 }
 
 .post-card {
-  border: 1px solid #e0e0e0;
+  border: 2px solid #2a2a2d;
+  background-color: #2a2a2d;
   border-radius: 8px;
   overflow: hidden;
   text-decoration: none;
   display: block;
   width: 100%;
+  transition: color var(--transition);
 }
 
 .post-card:hover {
     transition: none;
     text-decoration: none;
+    border-color: var(--night-blue);
 }
 
 .post-card::after {
-    transition: none;
+    display: none;
 }
 
 .post-card img {
@@ -258,6 +261,7 @@ a:hover::after {
   font-weight: 600;
   line-height: 1.4;
   margin: 0;
+  transition: color var(--transition);
 }
 
 /*

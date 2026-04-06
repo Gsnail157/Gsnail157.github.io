@@ -8,7 +8,7 @@
               e.preventDefault();
               navigator.clipboard.writeText('garyjwang12@gmail.com').then(() => {
                 el.textContent = 'Email Copied!';
-                setTimeout(() => el.textContent = 'Copy email to clipboard', 2000);
+                setTimeout(() => el.textContent = 'Click to copy email to clipboard', 2000);
               });
             }
         </script>
@@ -38,7 +38,7 @@
                      </li>
                      <li>
                          <img src="/public/gmail.png" alt="email">
-                         <a href="#" onclick="copyEmail(event, this)">Copy email to clipboard - Email for Resume!</a> 
+                         <a href="#" onclick="copyEmail(event, this)">Click to copy email to clipboard</a> 
                      </li>
                  </ul>   
             </div>
