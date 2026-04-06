@@ -7,6 +7,21 @@
     --sand-tan: #e1b382;
     --sand-tan-shadow: #c89666;
     --page-width: 800px;
+    --card-border: #111111;
+    --card-border-hover: #2563eb;
+    --title-color: #111111;
+    --title-hover: #2563eb;
+    --date-color: #6b7280;
+    --desc-color: #374151;
+    --tag-bg: #f3f4f6;
+    --tag-color: #374151;
+    --tag-border: #d1d5db;
+    --github-color: #111111;
+    --youtube-color: #dc2626;
+    --card-bg: #ffffff;
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --transition: 0.2s ease;
 }
 
 html {
@@ -309,6 +324,151 @@ a:hover::after {
   margin-bottom: 1.25rem;
 }
 
+/*
+ * Portfolio Page
+ * Append this to your existing CSS file
+ */
+ 
+.portfolio-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+ 
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+ 
+.portfolio-card {
+  flex: 1 1 320px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background: #2a2a2d;
+  border: 2px solid #2a2a2d;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+ 
+.portfolio-card::after {
+  display: none;
+}
+ 
+.portfolio-card:hover {
+  border-color: var(--night-blue);
+  color: var(--text-color);
+}
+ 
+.portfolio-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+ 
+.portfolio-card-title {
+  font-family: var(--font);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--sand-tan);
+  margin: 0;
+  transition: color var(--transition);
+}
+ 
+.portfolio-card:hover .portfolio-card-title {
+  color: var(--night-blue);
+}
+ 
+.portfolio-card-date {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 0;
+}
+ 
+.portfolio-card-description {
+  font-size: 0.85rem;
+  color: #fff;
+  line-height: 1.55;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
+}
+ 
+.portfolio-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+ 
+.portfolio-card-tags .tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-family: var(--font);
+  color: var(--sand-tan);
+  background: transparent;
+  border: 1px solid var(--sand-tan-shadow);
+  border-radius: 999px;
+  padding: 0.18rem 0.6rem;
+  text-transform: lowercase;
+}
+ 
+.portfolio-card-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding-top: 0.6rem;
+  border-top: 1px solid #3a3a3e;
+  margin-top: 0.6rem;
+}
+ 
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+}
+ 
+.card-link::after {
+  display: none;
+}
+ 
+.link-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+ 
+.github-link {
+  color: var(--text-color);
+  border-color: #555;
+}
+ 
+.github-link:hover {
+  background: #333;
+  color: var(--text-color);
+}
+ 
+.youtube-link {
+  color: #f87171;
+  border-color: #7f1d1d;
+}
+ 
+.youtube-link:hover {
+  background: #3b1212;
+  color: #f87171;
+}
+
 @media (max-width: 480px) {
   .header {
     width: 100%;
@@ -353,5 +513,15 @@ a:hover::after {
   }
   .name-break {
     display: inline;
+  }
+
+  .portfolio-grid {
+    flex-direction: column;
+  }
+ 
+  .portfolio-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }

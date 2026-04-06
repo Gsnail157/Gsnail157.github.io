@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/layouts/templates.js"></script>
+    <site-head title="{{ title }}"></site-head>
+</head>
+<body>
+    <site-header></site-header>
+    <div class="content">
+        <a href="/portfolio/" class="back-link">← Back to Portfolio</a>
+      <main class="post-body">
+        <article>
+          <div class="post-content">
+            <h1>{{ title }}</h1>
+            <p class="post-meta">{{ date | date: "%B %d, %Y" }}</p>
+            {% if image %}
+            <img src="{{ image }}" alt="{{ title }}" class="post-hero-img" />
+            {% endif %}
+            {{ content }}
+          </div>
+        </article>
+      </main>
+    </div>
+</body>
+</html>
