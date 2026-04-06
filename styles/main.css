@@ -26,9 +26,16 @@
 
 html {
     background: var(--background-color);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     font-family: var(--font);
     max-width: var(--page-width);
     margin: 2rem auto;
@@ -73,9 +80,10 @@ body {
 }
 
 .content {
-    margin-top: 10rem;
+    flex: 1;
+    margin-top: 9rem;
     background: var(--background-color);
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 .header img {
@@ -472,6 +480,15 @@ a:hover::after {
   background: #3b1212;
   color: #f87171;
 }
+
+.site-footer { width: 100%; }
+.footer-inner { 
+    display: flex; 
+    align-items: center; 
+    padding-bottom: 1rem; 
+}
+.footer-copy { font-size: 0.8rem; color: var(--text-color); }
+.footer-text { font-size: 0.8rem; color: #888; }
 
 @media (max-width: 480px) {
   .header {

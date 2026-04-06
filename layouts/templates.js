@@ -40,5 +40,22 @@ class SiteHead extends HTMLElement {
   }
 }
 
+class SiteFooter extends HTMLElement {
+  connectedCallback() {
+    const text = this.getAttribute('text') || '';
+    const year = new Date().getFullYear();
+
+    this.innerHTML = `
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <span class="footer-copy">&copy; ${year} Gary Wang</span>
+          ${text ? `<span class="footer-text">${text}</span>` : ''}
+        </div>
+      </footer>
+    `;
+  }
+}
+
 customElements.define('site-head', SiteHead);
 customElements.define('site-header', SiteHeader);
+customElements.define('site-footer', SiteFooter);
