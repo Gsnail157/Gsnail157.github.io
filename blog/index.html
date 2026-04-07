@@ -12,7 +12,8 @@ layout: null
         <div class="content">
             <main class="blog-page">
                 <div class="post-grid">
-                  {% for post in collections.posts | reverse %}
+                  {% assign sorted_posts = collections.posts | sort: "date" | reverse %}
+                  {% for post in sorted_posts %}
                     <a href="{{ post.url }}" class="post-card">
                       {% if post.data.image %}
                         <img src="{{ post.data.image }}" alt="{{ post.data.title }}" />

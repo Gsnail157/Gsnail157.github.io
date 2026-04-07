@@ -13,7 +13,8 @@ layout: null
         <div class="content">
             <main class="portfolio-page">
                 <div class="portfolio-grid">
-                  {% for project in collections.projects | reverse %}
+                  {% assign sorted_projects = collections.projects | sort: "date" | reverse %}
+                  {% for project in sorted_projects %}
 
                     {% assign has_github = false %}
                     {% assign has_youtube = false %}

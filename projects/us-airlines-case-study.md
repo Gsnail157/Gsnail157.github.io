@@ -1,7 +1,7 @@
 ---
 title: "US Airlines Case Study"
-date: 2024-03-01
-description: "The power of cargo and freight buyers within the US commerical airlines industry"
+date: 2025-01-22
+description: "Case study analyzing the bargining power of cargo and freight buyers within the US commerical airlines industry"
 layout: portfolio.html
 tags:
     - projects
